@@ -33,7 +33,7 @@ At the end of `config/app.php` add `'Cep' => 'Canducci\Cep\Facade\Cep'` to the `
 'aliases' => array(
     ...,
     'View'       => 'Illuminate\Support\Facades\View',
-    'Cep '       => 'Canducci\Cep\Facade\Cep',
+    'Cep'        => 'Canducci\Cep\Facade\Cep',
 
 ),
 ```
