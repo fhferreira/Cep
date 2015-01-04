@@ -129,10 +129,10 @@ $cep->toQuerty();
     cep=01414-001&logradouro=Rua+Haddock+Lobo&bairro=Cerqueira+C%C3%A9sar&localidade=S%C3%A3o+Paulo&uf=SP&ibge=3550308
 ```   
     
-###To check if any errors had to do:
+__To check if any errors had to do:__
 
 ```PHP
-$cep = Cep::find('01414001');			
+$cep   = Cep::find('01414001');			
 $dados = $cep->toQuerty();
 
 if ($dados) {
