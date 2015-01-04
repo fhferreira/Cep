@@ -49,6 +49,15 @@ $cep = Cep::find('19200000');
 Type returns:
 ```PHP    
 $cep->toJon();
+
+    {
+        "cep": "01414-001",
+        "logradouro": "Rua Haddock Lobo",
+        "bairro": "Cerqueira César",
+        "localidade": "São Paulo",
+        "uf": "SP",
+        "ibge": "3550308"
+    }
 ```
 
 ```PHP    
