@@ -27,7 +27,7 @@ In your `config/app.php` add `'Canducci\Cep\CepServiceProvider'` to the end of t
 ),
 ```
 
-At the end of `config/app.php` add `'Down' => 'Canducci\Cep\Facade\Cep'` to the `aliases` array
+At the end of `config/app.php` add `'Cep' => 'Canducci\Cep\Facade\Cep'` to the `aliases` array
 
 ```PHP
 'aliases' => array(
