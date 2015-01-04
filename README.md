@@ -9,7 +9,7 @@
 In the `require` key of `composer.json` file add the following
 
 ```PHP
-    "canducci/cep": "dev-master"
+"canducci/cep": "dev-master"
 ```
 
 Run the Composer update comand
@@ -18,41 +18,60 @@ Run the Composer update comand
 
 In your `config/app.php` add `'Canducci\Down\DownServiceProvider'` to the end of the `providers` array
 
-    'providers' => array(
-        ...,
-        'Illuminate\Workbench\WorkbenchServiceProvider',
-        'Canducci\Cep\CepServiceProvider',
+```PHP
+'providers' => array(
+    ...,
+    'Illuminate\Workbench\WorkbenchServiceProvider',
+    'Canducci\Cep\CepServiceProvider',
 
-    ),
+),
+```
 
 At the end of `config/app.php` add `'Down' => 'Canducci\Down\Facade\Down'` to the `aliases` array
 
-    'aliases' => array(
-        ...,
-        'View'       => 'Illuminate\Support\Facades\View',
-        'Cep '       => 'Canducci\Cep\Facade\Cep',
+```PHP
+'aliases' => array(
+    ...,
+    'View'       => 'Illuminate\Support\Facades\View',
+    'Cep '       => 'Canducci\Cep\Facade\Cep',
 
-    ),
+),
+```
 
 ##How to Use
 
 To use is very simple, pass the ZIP and calls the various types of returns, like this:
 
-    $cep = Cep::find('19200000');
+```PHP
+$cep = Cep::find('19200000');
+```
 
 Type returns:
+```PHP    
+$cep->toJon();
+```
+
+```PHP    
+$cep->toArray();
+```
+
+```PHP    
+$cep->toObject();
+```
+
+```PHP    
+$cep->toXml();
+```
+
+```PHP    
+$cep->toSimpleXml();
+```
+
+```PHP    
+$cep->toPiped();
+```
     
-    $cep->toJon();
-    
-    $cep->toArray();
-    
-    $cep->toObject();
-    
-    $cep->toXml();
-    
-    $cep->toSimpleXml();
-    
-    $cep->toPiped();
-    
-    $cep->toQuerty();
+```PHP    
+$cep->toQuerty();
+```   
     
