@@ -1,7 +1,7 @@
 {
     "name": "canducci/cep",
     "type": "library",
-    "description": "CEP Laravel",
+    "description": "Laravel CEP (Zip Code)",
     "keywords": ["Laravel","CEP"],
     "homepage": "https://github.com/diasfulvio/cep",
     "license": "MIT",
