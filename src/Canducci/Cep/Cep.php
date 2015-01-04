@@ -15,7 +15,7 @@
 		
 		public function find($cep) {
 			if (mb_strlen($cep) === 8 || mb_strlen($cep) === 9)
-			{
+			{								
 				$this->cep = $cep;				
 				return $this;
 			}			
@@ -24,7 +24,11 @@
 		private function toReturn($type = ''){
 			$url = $this->URL[$type];			
 			$url = str_replace('[cep]', $this->cep, $url);
-			$get = file_get_contents($url);
+			try {
+				$get = file_get_contents($url);	
+			} catch (Exception $e) {
+				throw new Exception("Number and http are invalid");				
+			}						
 			switch ($type) {
 				case 'json': {
 					$erro = json_decode($get);
