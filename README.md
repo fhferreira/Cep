@@ -8,7 +8,9 @@
 
 In the `require` key of `composer.json` file add the following
 
+```PHP
     "canducci/cep": "dev-master"
+```
 
 Run the Composer update comand
 
