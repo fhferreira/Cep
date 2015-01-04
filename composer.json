@@ -1,7 +1,7 @@
 {
     "name": "canducci/cep",
     "type": "library",
-    "description": "CEP",
+    "description": "CEP Laravel",
     "keywords": ["Laravel","CEP"],
     "homepage": "https://github.com/diasfulvio/cep",
     "license": "MIT",
