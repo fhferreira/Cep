@@ -34,3 +34,6 @@ At the end of `config/app.php` add `'Down' => 'Canducci\Down\Facade\Down'` to th
 
 ##How to Use
 
+To use is very simple, pass the ZIP and calls the various types of returns, like this:
+
+    $cep = Cep::find('19200000');
