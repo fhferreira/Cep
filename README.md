@@ -16,7 +16,7 @@ Run the Composer update comand
 
     $ composer update
 
-In your `config/app.php` add `'Canducci\Down\DownServiceProvider'` to the end of the `providers` array
+In your `config/app.php` add `'Canducci\Cep\CepServiceProvider'` to the end of the `providers` array
 
 ```PHP
 'providers' => array(
@@ -27,7 +27,7 @@ In your `config/app.php` add `'Canducci\Down\DownServiceProvider'` to the end of
 ),
 ```
 
-At the end of `config/app.php` add `'Down' => 'Canducci\Down\Facade\Down'` to the `aliases` array
+At the end of `config/app.php` add `'Down' => 'Canducci\Cep\Facade\Cep'` to the `aliases` array
 
 ```PHP
 'aliases' => array(
