@@ -62,14 +62,45 @@ $cep->toJon();
 
 ```PHP    
 $cep->toArray();
+    
+    Array
+    (
+        [cep] => 01414-001
+        [logradouro] => Rua Haddock Lobo
+        [bairro] => Cerqueira César
+        [localidade] => São Paulo
+        [uf] => SP
+        [ibge] => 3550308
+    )
 ```
 
 ```PHP    
 $cep->toObject();
+    
+    
+stdClass Object
+    (
+        [cep] => 01414-001
+        [logradouro] => Rua Haddock Lobo
+        [bairro] => Cerqueira César
+        [localidade] => São Paulo
+        [uf] => SP
+        [ibge] => 3550308
+    )
 ```
 
 ```PHP    
 $cep->toXml();
+    
+    <?xml version="1.0" encoding="utf-8"?>
+    <xmlcep>
+    	<cep>01414-001</cep>
+    	<logradouro>Rua Haddock Lobo</logradouro>
+    	<bairro>Cerqueira César</bairro>
+    	<localidade>São Paulo</localidade>
+    	<uf>SP</uf>
+    	<ibge>3550308</ibge>
+    </xmlcep>
 ```
 
 ```PHP    
