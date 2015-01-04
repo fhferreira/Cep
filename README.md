@@ -78,7 +78,7 @@ $cep->toArray();
 $cep->toObject();
     
     
-stdClass Object
+    stdClass Object
     (
         [cep] => 01414-001
         [logradouro] => Rua Haddock Lobo
@@ -105,13 +105,27 @@ $cep->toXml();
 
 ```PHP    
 $cep->toSimpleXml();
+
+    SimpleXMLElement Object
+    (
+        [cep] => 01414-001
+        [logradouro] => Rua Haddock Lobo
+        [bairro] => Cerqueira César
+        [localidade] => São Paulo
+        [uf] => SP
+        [ibge] => 3550308
+    )
 ```
 
 ```PHP    
 $cep->toPiped();
+    
+    cep:01414-001|logradouro:Rua Haddock Lobo|bairro:Cerqueira César|localidade:São Paulo|uf:SP|ibge:3550308
 ```
     
 ```PHP    
 $cep->toQuerty();
+    
+    cep=01414-001&logradouro=Rua+Haddock+Lobo&bairro=Cerqueira+C%C3%A9sar&localidade=S%C3%A3o+Paulo&uf=SP&ibge=3550308
 ```   
     
